@@ -36,7 +36,7 @@ export function NotFound({
           {description}
         </Text>
         <Button width="auto" variant="secondary" to={'/'}>
-          Take me to the home page
+          De regreso a la página de inicio
         </Button>
       </PageHeader>
       <Suspense>

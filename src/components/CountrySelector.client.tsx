@@ -77,7 +77,7 @@ export function CountrySelector() {
                 }`}
               >
                 {listboxOpen && (
-                  <Suspense fallback={<div className="p-2">Loading…</div>}>
+                  <Suspense fallback={<div className="p-2">{}</div>}>
                     {/* @ts-expect-error @headlessui/react incompatibility with node16 resolution */}
                     <Countries
                       selectedCountry={currentCountry}

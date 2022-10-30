@@ -2,10 +2,10 @@ import {defineConfig, CookieSessionStorage} from '@shopify/hydrogen/config';
 
 export default defineConfig({
   shopify: {
-    defaultCountryCode: 'US',
-    defaultLanguageCode: 'EN',
-    storeDomain: 'hydrogen-preview.myshopify.com',
-    storefrontToken: '3b580e70970c4528da70c98e097c2fa0',
+    defaultCountryCode: 'MX',
+    defaultLanguageCode: 'ES',
+    storeDomain: 'casanacases.com',
+    storefrontToken: import.meta.env.PUBLIC_STOREFRONT_API_TOKEN,
     storefrontApiVersion: '2022-07',
   },
   session: CookieSessionStorage('__session', {
