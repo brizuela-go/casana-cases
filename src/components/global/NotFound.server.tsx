@@ -16,7 +16,7 @@ import type {
 
 export function NotFound({
   response,
-  type = 'page',
+  type = 'página',
 }: {
   response?: HydrogenResponse;
   type?: string;
@@ -26,7 +26,7 @@ export function NotFound({
     response.statusText = 'Not found';
   }
 
-  const heading = `We’ve lost this ${type}`;
+  const heading = `No hemos encontrado esta ${type}`;
   const description = `We couldn’t find the ${type} you’re looking for. Try checking the URL or heading back to the home page.`;
 
   return (
