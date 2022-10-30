@@ -14,11 +14,11 @@ const PLACEHOLDERS = {
           mediaContentType: 'IMAGE',
           alt: 'Tracks in the snow leading to a person on a mountain top with a red jacket contrasting to an epic blue horizon with a mountain range in the distance.',
           previewImage: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_1.jpg?v=1654902468',
+            url: 'https://www.newsshooter.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-14-at-14.54.23.png',
           },
           id: 'gid://shopify/MediaImage/29259478466616',
           image: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_1.jpg?v=1654902468',
+            url: 'https://www.newsshooter.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-14-at-14.54.23.png',
             width: 2500,
             height: 3155,
           },
@@ -29,11 +29,11 @@ const PLACEHOLDERS = {
           mediaContentType: 'IMAGE',
           alt: 'A snowboarder standing on a mountain top in choppy snow, shows off the back of his snowboard which reads Hydrogen in a cursive script.',
           previewImage: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_2.jpg?v=1654902468',
+            url: 'https://static-01.daraz.com.np/p/68c8bc6bdeed91aeb94a184a41f85f67.jpg',
           },
           id: 'gid://shopify/MediaImage/29259478499384',
           image: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_2.jpg?v=1654902468',
+            url: 'https://static-01.daraz.com.np/p/68c8bc6bdeed91aeb94a184a41f85f67.jpg',
             width: 2500,
             height: 3155,
           },
