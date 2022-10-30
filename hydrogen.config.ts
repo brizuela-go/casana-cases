@@ -6,7 +6,7 @@ export default defineConfig({
     defaultLanguageCode: 'ES',
     storeDomain: 'casanacases.com',
     storefrontToken: import.meta.env.PUBLIC_STOREFRONT_API_TOKEN,
-    storefrontApiVersion: '2022-07',
+    storefrontApiVersion: '2022-10',
   },
   session: CookieSessionStorage('__session', {
     path: '/',
