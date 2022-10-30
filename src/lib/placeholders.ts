@@ -16,7 +16,7 @@ const PLACEHOLDERS = {
           previewImage: {
             url: 'https://www.newsshooter.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-14-at-14.54.23.png',
           },
-          id: 'gid://shopify/Collection/426655449398',
+          id: 'gid://shopify/MediaImage/29259478466616',
           image: {
             url: 'https://www.newsshooter.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-14-at-14.54.23.png',
             width: 2500,
@@ -31,7 +31,7 @@ const PLACEHOLDERS = {
           previewImage: {
             url: 'https://static-01.daraz.com.np/p/68c8bc6bdeed91aeb94a184a41f85f67.jpg',
           },
-          id: 'gid://shopify/Collection/426655449398',
+          id: 'gid://shopify/MediaImage/29259478499384',
           image: {
             url: 'https://static-01.daraz.com.np/p/68c8bc6bdeed91aeb94a184a41f85f67.jpg',
             width: 2500,
