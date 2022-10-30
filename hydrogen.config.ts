@@ -4,7 +4,7 @@ export default defineConfig({
   shopify: {
     defaultCountryCode: 'MX',
     defaultLanguageCode: 'ES',
-    storeDomain: 'casana-cases.myshopify.com/',
+    storeDomain: 'casana-cases2.myshopify.com/',
     storefrontToken: import.meta.env.PUBLIC_STOREFRONT_API_TOKEN,
     storefrontApiVersion: '2022-10',
   },
