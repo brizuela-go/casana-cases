@@ -51,9 +51,15 @@ export default function Policies() {
     return <NotFound type="page" />;
   }
 
+  const politicas = {
+    'Privacy Policy': 'Política de Privacidad',
+    'Shipping Policy': 'Política de Envíos',
+    'Terms of Service': 'Términos de Servicio',
+  };
+
   return (
     <Layout>
-      <PageHeader heading="Policies" />
+      <PageHeader heading="Políticas" />
       <Section padding="x" className="mb-24">
         {policies.map((policy) => {
           if (!policy) {
@@ -61,7 +67,9 @@ export default function Policies() {
           }
           return (
             <Heading className="font-normal text-heading" key={policy.id}>
-              <Link to={`/policies/${policy.handle}`}>{policy.title}</Link>
+              <Link to={`/policies/${policy.handle}`}>
+                {politicas[policy.title] || policy.title}
+              </Link>
             </Heading>
           );
         })}

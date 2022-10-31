@@ -16,48 +16,90 @@ export function FooterMenu({menu}: {menu?: EnhancedMenu}) {
 
   return (
     <>
-      {(menu?.items || []).map((item: EnhancedMenuItem) => (
-        <section key={item.id} className={styles.section}>
-          <Disclosure>
-            {/* @ts-expect-error @headlessui/react incompatibility with node16 resolution */}
-            {({open}) => (
-              <>
-                <Disclosure.Button className="text-left md:cursor-default">
-                  <Heading className="flex justify-between" size="lead" as="h3">
-                    {item.title}
-                    {item?.items?.length > 0 && (
-                      <span className="md:hidden">
-                        <IconCaret direction={open ? 'up' : 'down'} />
-                      </span>
-                    )}
-                  </Heading>
-                </Disclosure.Button>
-                {item?.items?.length > 0 && (
-                  <div
-                    className={`${
-                      open ? `max-h-48 h-fit` : `max-h-0 md:max-h-fit`
-                    } overflow-hidden transition-all duration-300`}
-                  >
-                    <Disclosure.Panel static>
-                      <nav className={styles.nav}>
-                        {item.items.map((subItem) => (
-                          <Link
-                            key={subItem.id}
-                            to={subItem.to}
-                            target={subItem.target}
-                          >
-                            {subItem.title}
-                          </Link>
-                        ))}
-                      </nav>
-                    </Disclosure.Panel>
-                  </div>
-                )}
-              </>
-            )}
-          </Disclosure>
-        </section>
-      ))}{' '}
+      <section className={styles.section}>
+        <Disclosure>
+          {/* @ts-expect-error @headlessui/react incompatibility with node16 resolution */}
+          {({open}) => (
+            <>
+              <Disclosure.Button className="text-left md:cursor-default">
+                <Heading className="flex justify-between" size="lead" as="h3">
+                  Recursos
+                  {/* {item?.items?.length > 0 && ( */}
+                  <span className="md:hidden">
+                    <IconCaret direction={open ? 'up' : 'down'} />
+                  </span>
+                  {/* )} */}
+                </Heading>
+              </Disclosure.Button>
+              {/* {item?.items?.length > 0 && ( */}
+              <div
+                className={`${
+                  open ? `max-h-48 h-fit` : `max-h-0 md:max-h-fit`
+                } overflow-hidden transition-all duration-300`}
+              >
+                <Disclosure.Panel static>
+                  <nav className={styles.nav}>
+                    {menu?.items
+                      .map((subItem) => (
+                        <Link
+                          key={subItem.id}
+                          to={subItem.to}
+                          target={subItem.target}
+                        >
+                          {subItem.title}
+                        </Link>
+                      ))
+                      .splice(0, 2)}
+                  </nav>
+                </Disclosure.Panel>
+              </div>
+              {/* )} */}
+            </>
+          )}
+        </Disclosure>
+      </section>
+      <section className={styles.section}>
+        <Disclosure>
+          {/* @ts-expect-error @headlessui/react incompatibility with node16 resolution */}
+          {({open}) => (
+            <>
+              <Disclosure.Button className="text-left md:cursor-default">
+                <Heading className="flex justify-between" size="lead" as="h3">
+                  Políticas
+                  {/* {item?.items?.length > 0 && ( */}
+                  <span className="md:hidden">
+                    <IconCaret direction={open ? 'up' : 'down'} />
+                  </span>
+                  {/* )} */}
+                </Heading>
+              </Disclosure.Button>
+              {/* {item?.items?.length > 0 && ( */}
+              <div
+                className={`${
+                  open ? `max-h-48 h-fit` : `max-h-0 md:max-h-fit`
+                } overflow-hidden transition-all duration-300`}
+              >
+                <Disclosure.Panel static>
+                  <nav className={styles.nav}>
+                    {menu?.items
+                      .map((subItem) => (
+                        <Link
+                          key={subItem.id}
+                          to={subItem.to}
+                          target={subItem.target}
+                        >
+                          {subItem.title}
+                        </Link>
+                      ))
+                      .splice(2, 5)}
+                  </nav>
+                </Disclosure.Panel>
+              </div>
+              {/* )} */}
+            </>
+          )}
+        </Disclosure>
+      </section>
     </>
   );
 }

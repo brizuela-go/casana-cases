@@ -1,6 +1,8 @@
 import {Heading, Input, PageHeader} from '~/components';
 import {Layout} from '~/components/index.server';
 
+import {IconSearch} from '~/components';
+
 export function SearchPage({
   searchTerm,
   children,
@@ -11,19 +13,16 @@ export function SearchPage({
   return (
     <Layout>
       <PageHeader>
-        <Heading as="h1" size="copy">
-          Search
-        </Heading>
         <form className="relative flex w-full text-heading">
           <Input
             defaultValue={searchTerm}
-            placeholder="Search…"
+            placeholder="Buscar…"
             type="search"
             variant="search"
             name="q"
           />
-          <button className="absolute right-0 py-2" type="submit">
-            Go
+          <button className="absolute right-0 mt-5" type="submit">
+            <IconSearch className="icon-search" />
           </button>
         </form>
       </PageHeader>

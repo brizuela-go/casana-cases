@@ -1,14 +1,7 @@
 import {Link, useUrl, useCart} from '@shopify/hydrogen';
 import {useWindowScroll} from 'react-use';
 
-import {
-  Heading,
-  IconAccount,
-  IconBag,
-  IconMenu,
-  IconSearch,
-  Input,
-} from '~/components';
+import {Heading, IconBag, IconMenu, IconSearch, Input} from '~/components';
 
 import {CartDrawer} from './CartDrawer.client';
 import {MenuDrawer} from './MenuDrawer.client';
@@ -108,7 +101,7 @@ function MobileHeader({
             }
             type="search"
             variant="minisearch"
-            placeholder="Search"
+            placeholder="Buscar"
             name="q"
           />
         </form>
@@ -124,9 +117,9 @@ function MobileHeader({
       </Link>
 
       <div className="flex items-center justify-end w-full gap-4">
-        <Link to={'/account'} className={styles.button}>
+        {/* <Link to={'/account'} className={styles.button}>
           <IconAccount />
-        </Link>
+        </Link> */}
         <button onClick={openCart} className={styles.button}>
           <IconBag />
           <CartBadge dark={isHome} />
@@ -191,16 +184,16 @@ function DesktopHeader({
             }
             type="search"
             variant="minisearch"
-            placeholder="Search"
+            placeholder="Buscar"
             name="q"
           />
           <button type="submit" className={styles.button}>
             <IconSearch />
           </button>
         </form>
-        <Link to={'/account'} className={styles.button}>
+        {/* <Link to={'/account'} className={styles.button}>
           <IconAccount />
-        </Link>
+        </Link> */}
         <button onClick={openCart} className={styles.button}>
           <IconBag />
           <CartBadge dark={isHome} />

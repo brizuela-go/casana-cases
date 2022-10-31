@@ -7,7 +7,7 @@ const PLACEHOLDERS = {
       byline: {
         value: 'The All New Hydrogen Snowboard Exclusively From Shopify',
       },
-      cta: {value: 'Shop Now →'},
+      cta: {value: 'Comprar ya →'},
       handle: 'freestyle',
       spread: {
         reference: {

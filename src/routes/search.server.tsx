@@ -52,7 +52,9 @@ export default function Search({
       <SearchPage searchTerm={searchTerm ? decodeURI(searchTerm) : null}>
         {noResults && (
           <Section padding="x">
-            <Text className="opacity-50">No results, try something else.</Text>
+            <Text className="opacity-50">
+              No hay resultados para la búsqueda. Inténtalo de nuevo
+            </Text>
           </Section>
         )}
         <Suspense>

@@ -31,16 +31,15 @@ export function CartEmpty({
     <div ref={scrollRef} className={container[layout]}>
       <section className="grid gap-6">
         <Text format>
-          Looks like you haven&rsquo;t added anything yet, let&rsquo;s get you
-          started!
+          Parece que no has agregado ningún producto a tu carrito todavía
         </Text>
         <div>
-          <Button onClick={onClose}>Continue shopping</Button>
+          <Button onClick={onClose}>Continuar Comprando</Button>
         </div>
       </section>
       <section className="grid gap-8 pt-4">
         <Heading format size="copy">
-          Shop Best Sellers
+          Compra los productos más vendidos
         </Heading>
         <div
           className={`grid grid-cols-2 gap-x-6 gap-y-8 ${topProductsContainer[layout]}`}
@@ -58,7 +57,7 @@ function TopProducts({onClose}: {onClose?: () => void}) {
   const products: Product[] = fetchSync('/api/bestSellers').json();
 
   if (products.length === 0) {
-    return <Text format>No products found.</Text>;
+    return <Text format>Ningún prducto encontrado</Text>;
   }
 
   return (

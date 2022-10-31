@@ -5,7 +5,7 @@ import {Heading, Section, Grid} from '~/components';
 
 export function FeaturedCollections({
   data,
-  title = 'Collections',
+  title = 'Colecciones',
   ...props
 }: {
   data: Collection[];
@@ -18,7 +18,7 @@ export function FeaturedCollections({
   if (!haveCollections) return null;
 
   return (
-    <Section {...props} heading={title}>
+    <Section {...props} heading="Colecciones Destacadas">
       <Grid items={items}>
         {data.map((collection) => {
           if (!collection?.image) {

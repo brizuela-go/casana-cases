@@ -81,13 +81,13 @@ export default function Product() {
                 <div className="grid gap-4 py-4">
                   {descriptionHtml && (
                     <ProductDetail
-                      title="Product Details"
+                      title="Descripción"
                       content={descriptionHtml}
                     />
                   )}
                   {shippingPolicy?.body && (
                     <ProductDetail
-                      title="Shipping"
+                      title="Envíos"
                       content={getExcerpt(shippingPolicy.body)}
                       learnMore={`/policies/${shippingPolicy.handle}`}
                     />
@@ -105,7 +105,7 @@ export default function Product() {
           </div>
         </Section>
         <Suspense>
-          <ProductSwimlane title="Related Products" data={id} />
+          <ProductSwimlane title="Productos Relacionados" data={id} />
         </Suspense>
       </ProductOptionsProvider>
     </Layout>

@@ -74,7 +74,17 @@ export default function Policy({params}: HydrogenRouteProps) {
         className="flex-col items-baseline w-full gap-8 md:flex-row"
       >
         <PageHeader
-          heading={page.title}
+          heading={
+            page.title === 'Privacy Policy'
+              ? 'Política de Privacidad'
+              : page.title === 'Shipping Policy'
+              ? 'Política de Envíos'
+              : page.title === 'Terms of Service'
+              ? 'Términos de Servicio'
+              : page.title === 'Refund Policy'
+              ? 'Política de Devoluciones'
+              : page.title
+          }
           className="grid items-start flex-grow gap-4 md:sticky top-36 md:w-5/12"
         >
           <Button
@@ -82,7 +92,7 @@ export default function Policy({params}: HydrogenRouteProps) {
             variant="inline"
             to={'/policies'}
           >
-            &larr; Back to Policies
+            &larr; De vuelta a Políticas
           </Button>
         </PageHeader>
         <div className="flex-grow w-full md:w-7/12">

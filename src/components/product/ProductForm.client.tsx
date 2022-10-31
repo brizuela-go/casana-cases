@@ -119,7 +119,7 @@ export function ProductForm() {
                 as="span"
                 className="flex items-center justify-center gap-2"
               >
-                <span>Add to bag</span> <span>·</span>{' '}
+                <span>Añadir al carrito</span> <span>·</span>{' '}
                 <Money
                   withoutTrailingZeros
                   data={selectedVariant.priceV2!}
