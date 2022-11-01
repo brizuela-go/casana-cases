@@ -2,6 +2,15 @@ import {useUrl} from '@shopify/hydrogen';
 
 import {Section, Heading, FooterMenu, CountrySelector} from '~/components';
 import type {EnhancedMenu} from '~/lib/utils';
+import {AMEX, APPLE_PAY, MASTERCARD, PayPal, VISA} from '~/assets/index';
+
+const icons = {
+  amex: AMEX,
+  applePay: APPLE_PAY,
+  mastercard: MASTERCARD,
+  paypal: PayPal,
+  visa: VISA,
+};
 
 /**
  * A server component that specifies the content of the footer on the website
@@ -35,6 +44,15 @@ export function Footer({menu}: {menu?: EnhancedMenu}) {
         </Heading>
         <CountrySelector />
       </section>
+      {icons && (
+        <section className="grid gap-4 w-full md:max-w-[335px] md:ml-auto">
+          <div className="flex justify-center items-center gap-4">
+            {Object.entries(icons).map(([key, Icon]) => (
+              <img key={key} className="w-8 h-8" src={Icon} alt={Icon} />
+            ))}
+          </div>
+        </section>
+      )}
       <div
         className={`self-end pt-8 opacity-50 md:col-span-2 lg:col-span-${itemsCount}`}
       >

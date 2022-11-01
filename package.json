@@ -1,8 +1,7 @@
 {
-  "name": "hydrogen",
-  "description": "Demo store template for @shopify/hydrogen",
+  "name": "casana-cases",
+  "description": "A collection of cases for the Casana project",
   "version": "0.0.0",
-  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "shopify hydrogen dev",
@@ -50,5 +49,5 @@
     "typewriter-effect": "^2.19.0",
     "typographic-base": "^1.0.4"
   },
-  "author": "nrajlich"
+  "author": "Juan Brizuela"
 }

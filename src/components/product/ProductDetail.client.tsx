@@ -42,7 +42,7 @@ export function ProductDetail({
                   className="pb-px border-b border-primary/30 text-primary/50"
                   to={learnMore}
                 >
-                  Learn more
+                  Saber más
                 </Link>
               </div>
             )}

@@ -51,7 +51,7 @@ export function AccountDetails({
               : 'Add name'}{' '}
           </p>
 
-          <div className="mt-4 text-sm text-primary/50">Contact</div>
+          <div className="mt-4 text-sm text-primary/50">Contacto</div>
           <p className="mt-1">{phone ?? 'Add mobile'}</p>
 
           <div className="mt-4 text-sm text-primary/50">Email address</div>

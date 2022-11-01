@@ -25,11 +25,11 @@ export function NoResultRecommendations({
   return (
     <>
       <FeaturedCollections
-        title="Trending Collections"
+        title="Colleciones en Tendencia"
         data={data.featuredCollections.nodes}
       />
       <ProductSwimlane
-        title="Trending Products"
+        title="Productos en Tendencia"
         data={data.featuredProducts.nodes}
       />
     </>

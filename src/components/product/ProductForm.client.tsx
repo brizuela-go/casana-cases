@@ -113,7 +113,7 @@ export function ProductForm() {
             as="span"
           >
             {isOutOfStock ? (
-              <Text>Sold out</Text>
+              <Text>Agotado</Text>
             ) : (
               <Text
                 as="span"

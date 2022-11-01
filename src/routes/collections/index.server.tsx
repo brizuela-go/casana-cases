@@ -9,8 +9,8 @@ import {getImageLoadingPriority, PAGINATION_SIZE} from '~/lib/const';
 export default function Collections() {
   return (
     <Layout>
-      <Seo type="page" data={{title: 'All Collections'}} />
-      <PageHeader heading="Collections" />
+      <Seo type="page" data={{title: 'Todas las Colecciones'}} />
+      <PageHeader heading="Colecciones" />
       <Section>
         <Suspense>
           <CollectionGrid />

@@ -52,7 +52,7 @@ export default function Product() {
     },
   });
 
-  const {media, title, vendor, descriptionHtml, id} = product;
+  const {media, title, vendor, descriptionHtml, id, options} = product;
   const {shippingPolicy, refundPolicy} = shop;
 
   return (
@@ -73,10 +73,19 @@ export default function Product() {
                   <Heading as="h1" format className="whitespace-normal">
                     {title}
                   </Heading>
+
                   {vendor && (
                     <Text className={'opacity-50 font-medium'}>{vendor}</Text>
                   )}
                 </div>
+                {options?.map((option: {name: String; values: String}) => (
+                  <div>
+                    <p>{option.name}</p>
+                    <div className="rounded-2xl bg-black text-white text-md shadow-xl px-2 py-1 mt-3 mr-64 text-center">
+                      {option.values}
+                    </div>
+                  </div>
+                ))}
                 <ProductForm />
                 <div className="grid gap-4 py-4">
                   {descriptionHtml && (
@@ -124,6 +133,11 @@ const PRODUCT_QUERY = gql`
       title
       vendor
       descriptionHtml
+      options {
+        id
+        name
+        values
+      }
       media(first: 7) {
         nodes {
           ...Media
