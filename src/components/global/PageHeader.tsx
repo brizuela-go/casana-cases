@@ -51,12 +51,12 @@ export function PageHeader({
         {children}
       </header>
       {heading === 'Contacto' && (
-        <div className="flex flex-col items-center space-y-20 lg:space-y-0 md:space-y-0 lg:flex-row lg:justify-evenly md:justify-evenly md:flex-row lg:content-center md:content-center sm:content-center content-center">
+        <div className="flex flex-col items-center space-y-20 lg:space-y-0 md:space-y-0 lg:flex-row lg:justify-evenly md:justify-evenly md:flex-row lg:content-center md:content-center sm:content-center content-center lg:mb-0 md:mb-0 mb-12">
           {Object.entries(icons).map(([key, [label, Icon]]) => (
             <a
               href={label}
               key={key}
-              className="lg:hover:-translate-y-6 transform transition duration-400 ease-in-out lg:hover:scale-110 lg:hover:shadow-header focus:opacity-50 focus:bg-opacity-75"
+              className="lg:hover:-translate-y-6 transform transition duration-400 ease-in-out lg:hover:scale-110 lg:hover:shadow-header focus:opacity-50 focus:bg-opacity-75 dark:bg-transparent dark:hover:bg-transparent bg-black rounded-3xl shadow-xl lg:hover:shadow-2xl dark:shadow-none p-3"
             >
               <img
                 src={Icon}
