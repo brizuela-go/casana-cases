@@ -9,7 +9,7 @@ const icons = {
     'mailto:newshadessunglasses@gmail.com?Subject=Preguntas%20de%20Casana%20Cases',
     Mail,
   ],
-  messenger: ['https://m.me/newshadessunglasses', Messenger],
+  messenger: ['https://m.me/100077562103444', Messenger],
 };
 
 export function PageHeader({
@@ -58,11 +58,7 @@ export function PageHeader({
               key={key}
               className="lg:hover:-translate-y-6 transform transition duration-400 ease-in-out lg:hover:scale-110 lg:hover:shadow-header focus:opacity-50 focus:bg-opacity-75 dark:bg-transparent dark:hover:bg-transparent bg-black rounded-3xl shadow-xl lg:hover:shadow-2xl dark:shadow-none p-3"
             >
-              <img
-                src={Icon}
-                alt="WhatsApp"
-                className="lg:w-60 md:w-52 w-32 "
-              />
+              <img src={Icon} alt={key} className="lg:w-60 md:w-52 w-32 " />
             </a>
           ))}
         </div>
