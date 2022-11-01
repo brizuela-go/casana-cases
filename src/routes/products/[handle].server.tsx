@@ -78,12 +78,10 @@ export default function Product() {
                     <Text className={'opacity-50 font-medium'}>{vendor}</Text>
                   )}
                 </div>
-                {options?.map((option: {name: String; values: String}) => (
+                {options?.map((option: {name: string; values: string}) => (
                   <div>
-                    <p>{option.name}</p>
-                    <div className="rounded-2xl bg-black text-white text-md shadow-xl px-2 py-1 mt-3 mr-64 text-center">
-                      {option.values}
-                    </div>
+                    <p className="text-lg font-bold">{option.name}</p>
+                    <div className="text-primary/50">{option.values}</div>
                   </div>
                 ))}
                 <ProductForm />
